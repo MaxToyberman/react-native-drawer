@@ -579,6 +579,7 @@ export default class Drawer extends Component {
       <View
         {...this.responder.panHandlers}
         key="main"
+	accessibilityViewIsModal={true}
         ref={c => this.main = c}
         style={[this.stylesheet.main, {height: this.getMainHeight(), width: this.getMainWidth()}]}
         >
@@ -597,6 +598,7 @@ export default class Drawer extends Component {
       <View
         {...this.responder.panHandlers}
         key="drawer"
+	accessibilityViewIsModal={true}
         ref={c => this.drawer = c}
         elevation={this.props.elevation}
         style={[this.stylesheet.drawer, {height: this.getDrawerHeight(), width: this.getDrawerWidth()}]}
