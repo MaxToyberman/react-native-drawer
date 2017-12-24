@@ -563,6 +563,7 @@ export default class Drawer extends Component {
 
     return (
       <View
+	accessibilityViewIsModal={true}    
         key="drawerContainer"
         onLayout={this.handleSetViewport}
         style={this.stylesheet.container}
