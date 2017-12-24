@@ -579,7 +579,6 @@ export default class Drawer extends Component {
       <View
         {...this.responder.panHandlers}
         key="main"
-	accessibilityViewIsModal={true}
         ref={c => this.main = c}
         style={[this.stylesheet.main, {height: this.getMainHeight(), width: this.getMainWidth()}]}
         >
